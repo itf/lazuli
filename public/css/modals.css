@@ -17,14 +17,17 @@ body {
 }
 
 .portfolio-modal .modal-content {
-    padding: 100px 0;
+    padding: 100px 45px;
     min-height: 100%;
+    max-width: 85%;
+    margin-left: auto; 
+    margin-right: auto;
     border: 0;
     border-radius: 0;
     text-align: center;
     background-clip: border-box;
     -webkit-box-shadow: none;
-    box-shadow: none;
+    box-shadow: black;
 }
 
 .portfolio-modal .modal-content h2 {
@@ -75,7 +78,3 @@ body {
     transform: rotate(90deg);
 }
 
-.portfolio-modal .modal-backdrop {
-    display: none;
-    opacity: 0;
-}
