@@ -6,26 +6,7 @@
     <description>Recent content on Lazuli Motel</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 11 Jan 2016 13:19:29 +0100</lastBuildDate>
     <atom:link href="https://itf.github.io/lazuli/public/index.xml" rel="self" type="application/rss+xml" />
-    
-    <item>
-      <title>Pesto</title>
-      <link>https://itf.github.io/lazuli/public/recipe/pesto/</link>
-      <pubDate>Mon, 11 Jan 2016 13:19:29 +0100</pubDate>
-      
-      <guid>https://itf.github.io/lazuli/public/recipe/pesto/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Guacamole</title>
-      <link>https://itf.github.io/lazuli/public/recipe/guacamole/</link>
-      <pubDate>Sun, 10 Jan 2016 13:19:29 +0100</pubDate>
-      
-      <guid>https://itf.github.io/lazuli/public/recipe/guacamole/</guid>
-      <description></description>
-    </item>
     
   </channel>
 </rss>
