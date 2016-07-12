@@ -1,9 +1,10 @@
 
 var foo = $('.gallery-photo');
 foo.poptrox({
-    selector:                   'a.image', 
+    selector:  'a.image', 
     usePopupNav: true,
     baseZIndex:2000,
+   windowMargin:5,
 });
 
 $('div.modal').on('show.bs.modal', function() {
