@@ -15,9 +15,13 @@ body {
 .img-centered {
     margin: 0 auto;
 }
-.modal-backdrop {
-    position:fixed;
-    height: 100%;
+
+@media(min-width:767px) {
+    .modal-backdrop {
+        position:fixed;
+        height: 100%;
+    
+    }
 }
 
 .portfolio-modal .modal-content {
