@@ -497,3 +497,22 @@ img::-moz-selection {
 body {
     webkit-tap-highlight-color: #222;
 }
+
+.aspect-ratio-image{
+    padding-top:66.7%;
+    height:0;
+    position: relative;
+}
+.cropped-image {
+    position:absolute;
+    left:0;
+    top:0;
+    right:0;
+    bottom:0;
+    overflow: hidden;
+}
+.img-resized {
+    min-width: 100%;
+    min-height: 100%;
+    height:auto;
+}

@@ -27,13 +27,21 @@ $('div.modal').on('hide.bs.modal', function() {
 $(document).ready(function() {
     $('div.modal').each(function(){
 	var modal = this;
-	console.log(this);
-	console.log(this.modal);
 	var hash = '#'+modal.id;
 	var windowhash = window.location.hash;
 	if(windowhash== hash) {
-	    $(this).modal('toggle');
+	    $(this).modal('show');
 	}
     });
 });
 
+$(window).on('hashchange', function() {
+      $('div.modal').each(function(){
+	var modal = this;
+	var hash = '#'+modal.id;
+	var windowhash = window.location.hash;
+	if(windowhash== hash) {
+	    $(this).modal('show');
+	}
+    });
+});
