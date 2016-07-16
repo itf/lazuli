@@ -516,3 +516,6 @@ body {
     min-height: 100%;
     height:auto;
 }
+.my-fa-facebook:before {
+  content: "\f09a";
+}
