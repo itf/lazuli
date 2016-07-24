@@ -340,7 +340,7 @@
             <div class="col-lg-8 col-lg-offset-2 text-center">
                 <h2 class="section-heading">Entre em contato</h2>
                 <hr class="primary">
-                <p>Venha viver um momento especial</p>
+               
             </div>
         </div>
 	<div class="row">
@@ -1076,10 +1076,19 @@
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
+  
   ga('create', 'UA-80847986-1', 'auto');
   ga('send', 'pageview');
-
+  
+  setTimeout("ga('send', 'event', { eventCategory: '30 seconds on page', eventAction: 'Read' })", 30000);
+  
+  var runned = false; 
+  $( window ).scroll( function() { 
+  if ( $( document ).scrollTop() >= 250 && runned == false ) { 
+  ga('send', 'event', { eventCategory: 'Scrolled 350px', eventAction: 'Scroll' }); 
+  runned = true; 
+  } 
+  });
 </script>
 
     </body>
