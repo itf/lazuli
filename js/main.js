@@ -7,6 +7,8 @@ foo.poptrox({
    windowMargin:5,
 });
 
+var thishash = window.location.hash;
+
 $('div.modal').on('show.bs.modal', function() {
     var modal = this;
     var hash = modal.id;
@@ -19,17 +21,18 @@ $('div.modal').on('show.bs.modal', function() {
 });
 
 $('div.modal').on('hide.bs.modal', function() {
-    var hash = this.id;
-    history.pushState('', document.title, window.location.pathname);
+    var modalID = this.id;
+    thishash=thishash.replace(modalID,"");
+    history.pushState('', document.title, window.location.pathname+thishash);
 });
 
 
 $(document).ready(function() {
     $('div.modal').each(function(){
 	var modal = this;
-	var hash = '#'+modal.id;
+	var hash = modal.id;
 	var windowhash = window.location.hash;
-	if(windowhash== hash) {
+	if(windowhash.indexOf(hash) != -1) {
 	    $(this).modal('show');
 	}
     });
@@ -38,9 +41,10 @@ $(document).ready(function() {
 $(window).on('hashchange', function() {
       $('div.modal').each(function(){
 	var modal = this;
-	var hash = '#'+modal.id;
+	var hash = modal.id;
 	var windowhash = window.location.hash;
-	if(windowhash== hash) {
+	thishash= windowhash;
+	if(windowhash.indexOf(hash) != -1) {
 	    $(this).modal('show');
 	}
     });
