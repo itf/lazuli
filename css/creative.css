@@ -196,6 +196,32 @@ header {
     -o-background-size: cover;
 }
 
+@media(min-width:800px) {
+    a[href^="tel:"] {
+        pointer-events: none; 
+    }
+}
+
+@media(min-width:800px) {
+    a[href^="geo:"] {
+        pointer-events: none; 
+    }
+}
+
+
+header a{
+    color: #eee;
+}
+
+header a[href^="tel:"]:before {
+  content: "\260e";
+  margin-right: 0.5em;
+}
+
+
+
+
+
 header .header-content {
     position: relative;
     width: 100%;
