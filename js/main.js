@@ -7,45 +7,51 @@ foo.poptrox({
    windowMargin:5,
 });
 
-var thishash = window.location.hash;
+var previoushash = "";
 
 $('div.modal').on('show.bs.modal', function() {
     var modal = this;
-    var hash = modal.id;
-    window.location.hash = hash;
+    var modalID = modal.id;
+    window.location.hash = modalID;
+    var windowhash = window.location.hash;
     window.onhashchange = function() {
-	if (!location.hash){
-	    $(modal).modal('hide');
-	}
+	    var windowhash = window.location.hash;
+	    if (windowhash.indexOf(modalID) == -1){
+	        $(modal).modal('hide');
+	    }
     }
 });
 
 $('div.modal').on('hide.bs.modal', function() {
     var modalID = this.id;
-    thishash=thishash.replace(modalID,"");
-    history.pushState('', document.title, window.location.pathname+thishash);
+    var windowhash = window.location.hash;
+    if(windowhash.indexOf(modalID) != -1) {
+        windowhash=windowhash.replace(modalID,"");
+        history.pushState('', document.title, window.location.pathname+windowhash);
+    }
 });
 
 
 $(document).ready(function() {
     $('div.modal').each(function(){
-	var modal = this;
-	var hash = modal.id;
-	var windowhash = window.location.hash;
-	if(windowhash.indexOf(hash) != -1) {
-	    $(this).modal('show');
-	}
+	    var modal = this;
+	    var modalID = modal.id;
+	    var windowhash = window.location.hash;
+	    if(windowhash.indexOf(modalID) != -1) {
+	        $(this).modal('show');
+	    }
     });
 });
 
 $(window).on('hashchange', function() {
-      $('div.modal').each(function(){
-	var modal = this;
-	var hash = modal.id;
 	var windowhash = window.location.hash;
-	thishash= windowhash;
-	if(windowhash.indexOf(hash) != -1) {
-	    $(this).modal('show');
-	}
+	$('div.modal').each(function(){
+        var modal = this;
+	    var modalID = modal.id;
+	    if(!($(this).data('bs.modal') || {}).isShown){
+	        if(windowhash.indexOf(modalID) != -1) {
+	            $(this).modal('show');
+	        }
+	    }
     });
 });
