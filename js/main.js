@@ -12,13 +12,12 @@ var previoushash = "";
 $('div.modal').on('show.bs.modal', function() {
     var modal = this;
     var modalID = modal.id;
-    window.location.hash = modalID;
     var windowhash = window.location.hash;
+    if (windowhash.indexOf(modalID) == -1){
+         window.location.hash = modalID;
+    }
     window.onhashchange = function() {
 	    var windowhash = window.location.hash;
-	    if (windowhash.indexOf(modalID) == -1){
-	        $(modal).modal('hide');
-	    }
     }
 });
 
@@ -52,6 +51,9 @@ $(window).on('hashchange', function() {
 	        if(windowhash.indexOf(modalID) != -1) {
 	            $(this).modal('show');
 	        }
+	    }
+	    if (windowhash.indexOf(modalID) == -1){
+	        $(modal).modal('hide');
 	    }
     });
 });

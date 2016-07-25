@@ -46,6 +46,14 @@ a:focus {
     color: rgb(52, 52, 52);
 }
 
+a.informacoes-link {
+    color: #eee;
+    -webkit-transition: all .35s;
+    -moz-transition: all .35s;
+    transition: all .35s;
+}
+
+
 h1,
 h2,
 h3,
@@ -367,7 +375,20 @@ header .header-content .header-content-inner p {
     text-shadow: darkblue;
 }
 
-.call-to-action h2 {
+
+.informacoes {
+   background-color: RGBA(255,255,255,0.05);
+}
+@media(min-width:768px) {
+    .informacoes{
+        margin-left:auto;
+        margin-right:auto;
+        width:50%;
+    }
+}
+
+
+.informacoes h2 {
     margin: 0 auto 20px;
 }
 

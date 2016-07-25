@@ -60,8 +60,8 @@ body {
 
 .portfolio-modal .close-modal {
     position: absolute;
-    top: 25px;
-    right: 25px;
+    top: 35px;
+    right: 35px;
     width: 75px;
     height: 75px;
     background-color: transparent;
@@ -85,6 +85,90 @@ body {
 
 .portfolio-modal .close-modal .lr .rl {
     z-index: 1052;
+    width: 1px;
+    height: 75px;
+    background-color: #2c3e50;
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.preco-link{
+  color : #003366;
+  text-decoration: underline;
+}
+
+.informacoes-modal{
+    z-index: 900;
+}
+
+.informacoes-modal .modal-content h2{
+    text-align: center;
+    line-height: 200%;
+}
+
+
+.informacoes-modal .modal-content {
+    padding: 100px 7.5%;
+    min-height: 100%;
+    max-width: 85%;
+    margin-left: auto; 
+    margin-right: auto;
+    border: 0;
+    border-radius: 0;
+    text-align: left;
+    background-clip: border-box;
+    -webkit-box-shadow: none;
+    box-shadow: black;
+}
+@media(max-width:767px) {
+  .informacoes-modal .modal-content {
+      padding: 100px 1%;
+      min-height: 100%;
+      max-width: 100%;
+  }
+}
+
+.informacoes-modal .modal-content h2 {
+    margin: 0;
+    font-size: 3em;
+}
+
+.informacoes-modal .modal-content img {
+    margin-bottom: 30px;
+}
+
+.informacoes-modal .modal-content .item-details {
+    margin: 30px 0;
+}
+
+.informacoes-modal .close-modal {
+    position: absolute;
+    top: 35px;
+    right: 35px;
+    width: 75px;
+    height: 75px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.informacoes-modal .close-modal:hover {
+    opacity: .3;
+}
+
+.informacoes-modal .close-modal .lr {
+    z-index: 951;
+    width: 1px;
+    height: 75px;
+    margin-left: 35px;
+    background-color: #2c3e50;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.informacoes-modal .close-modal .lr .rl {
+    z-index: 952;
     width: 1px;
     height: 75px;
     background-color: #2c3e50;
