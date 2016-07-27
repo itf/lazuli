@@ -30,6 +30,14 @@ $('div.modal').on('hide.bs.modal', function() {
     }
 });
 
+$('div.modal').on('hidden.bs.modal', function() {
+    $('div.modal').each(function(){
+         if(($(this).data('bs.modal') || {}).isShown){
+	    document.body.className += " modal-open";
+	 }
+     });
+});
+
 
 $(document).ready(function() {
     $('div.modal').each(function(){
@@ -47,8 +55,9 @@ $(window).on('hashchange', function() {
 	$('div.modal').each(function(){
         var modal = this;
 	    var modalID = modal.id;
-	    if(!($(this).data('bs.modal') || {}).isShown){
-	        if(windowhash.indexOf(modalID) != -1) {
+	    if(windowhash.indexOf(modalID) != -1) {
+		document.body.className += " modal-open";
+	    	if(!($(this).data('bs.modal') || {}).isShown){
 	            $(this).modal('show');
 	        }
 	    }
