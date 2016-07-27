@@ -18,11 +18,12 @@ body {
 
 @media(min-width:1200px) {
     .modal-backdrop {
-        position:fixed;
         height: 100%;
-    
+        position: fixed;
     }
 }
+
+
 
 .portfolio-modal .modal-content {
     padding: 100px 7.5%;
@@ -96,6 +97,12 @@ body {
 .preco-link{
   color : #003366;
   text-decoration: underline;
+  font-weight: bold;
+}
+
+.preco-font{
+    font-family:"Lucida Console", Monaco, monospace;
+    font-weight: 600;
 }
 
 .informacoes-modal{
@@ -131,7 +138,13 @@ body {
 
 .informacoes-modal .modal-content h2 {
     margin: 0;
-    font-size: 3em;
+    font-size: 42px;
+}
+
+@media (min-width:1000px){
+.informacoes-modal .modal-content :not(h2){
+    font-size: 18px;
+  }
 }
 
 .informacoes-modal .modal-content img {
@@ -177,3 +190,6 @@ body {
     transform: rotate(90deg);
 }
 
+.btn-default{
+ font-size:1.3em; 
+}

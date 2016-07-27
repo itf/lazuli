@@ -57,3 +57,6 @@ $(window).on('hashchange', function() {
 	    }
     });
 });
+
+sorttable.sort_alpha = function(a,b) { return a[0].localeCompare(b[0]); }
+
