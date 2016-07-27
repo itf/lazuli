@@ -35,6 +35,7 @@ body {
     border-radius: 0;
     text-align: center;
     background-clip: border-box;
+    background-color:#fafafa;
     -webkit-box-shadow: none;
     box-shadow: black;
 }
