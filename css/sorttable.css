@@ -7,3 +7,42 @@ table.sortable thead {
     font-weight: bold;
     cursor: pointer;
 }
+
+@media(max-width:389px){
+    table{
+        width:100%;
+    }
+    
+    th.quarto-nome{
+        display:block;
+    }
+
+    td.quarto-nome{
+        display:block;
+        width:100%;
+    }
+    
+    td{
+        width=100%;
+    }
+
+    tr{
+        display:block;
+        margin-bottom:30px;
+    }
+}
+
+@media (min-width:390px) and (max-width:430px){
+    table{
+        font-size: 13px;
+    }
+
+}
+
+
+
+@media (max-width:351px) ,(min-width:389px) and (max-width:560px){
+    td span{
+        display:none;
+    }
+}

@@ -39,7 +39,7 @@ body {
     -webkit-box-shadow: none;
     box-shadow: black;
 }
-@media(max-width:767px) {
+@media(max-width:768px) {
   .portfolio-modal .modal-content {
       padding: 100px 1%;
       min-height: 100%;
@@ -129,7 +129,7 @@ body {
     -webkit-box-shadow: none;
     box-shadow: black;
 }
-@media(max-width:767px) {
+@media(max-width:768px) {
   .informacoes-modal .modal-content {
       padding: 100px 1%;
       min-height: 100%;
