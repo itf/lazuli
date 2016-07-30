@@ -216,10 +216,17 @@ header {
     }
 }
 
+@media (max-width:799px){
+    a.contact{
+        text-decoration:underline;
+    }
+}
 
 header a{
     color: #eee;
 }
+
+
 
 header a[href^="tel:"]:before {
   content: "\260e";

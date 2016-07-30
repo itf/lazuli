@@ -201,3 +201,8 @@ body {
 .btn-default{
  font-size:1.3em; 
 }
+
+.centered{
+    margin-left: auto;
+    margin-right: auto;
+}
