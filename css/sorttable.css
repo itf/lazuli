@@ -26,9 +26,9 @@ table.sortable thead {
         width=100%;
     }
 
-    tr{
+    tr.precos{
         display:block;
-        margin-bottom:30px;
+        margin-bottom:10px;
     }
 }
 
