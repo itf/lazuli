@@ -111,7 +111,7 @@ body {
 }
 
 .informacoes-modal{
-    z-index: 1047;
+    z-index: 1044;
 }
 
 .informacoes-modal .modal-content h2{
@@ -178,7 +178,7 @@ body {
 }
 
 .informacoes-modal .close-modal .lr {
-    z-index: 1048;
+    z-index: 1045;
     width: 1px;
     height: 75px;
     margin-left: 35px;
@@ -189,7 +189,7 @@ body {
 }
 
 .informacoes-modal .close-modal .lr .rl {
-    z-index: 1049;
+    z-index: 1046;
     width: 1px;
     height: 75px;
     background-color: #2c3e50;
@@ -205,4 +205,84 @@ body {
 .centered{
     margin-left: auto;
     margin-right: auto;
+}
+
+
+
+
+.apt-modal .modal-content {
+    padding: 100px 7.5%;
+    min-height: 100%;
+    height: 100%;
+    overflow: scroll;
+    overflow-x: visible;
+    max-width: 85%;
+    margin-left: auto; 
+    margin-right: auto;
+    border: 0;
+    border-radius: 0;
+    text-align: center;
+    background-clip: border-box;
+    background-color:#fafafa;
+    -webkit-box-shadow: none;
+    box-shadow: black;
+}
+@media(max-width:768px) {
+  .apt-modal .modal-content {
+      padding: 100px 1%;
+      min-height: 100%;
+      max-width: 100%;
+  }
+}
+
+.apt-modal .modal-content h2 {
+    margin: 0;
+    font-size: 3em;
+}
+
+.apt-modal .modal-content img {
+    margin-bottom: 30px;
+}
+
+.apt-modal .modal-content .item-details {
+    margin: 30px 0;
+}
+
+.apt-modal .close-modal {
+    position: absolute;
+    top: 35px;
+    right: 35px;
+    width: 75px;
+    height: 75px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.apt-modal .close-modal:hover {
+    opacity: .3;
+}
+
+.apt-modal .close-modal .lr {
+    z-index: 1048;
+    width: 1px;
+    height: 75px;
+    margin-left: 35px;
+    background-color: #2c3e50;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.apt-modal .close-modal .lr .rl {
+    z-index: 1049;
+    width: 1px;
+    height: 75px;
+    background-color: #2c3e50;
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.apt-modal{
+    z-index: 1047;
 }

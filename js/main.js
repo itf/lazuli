@@ -78,5 +78,13 @@ $('div.modal').on('show.bs.modal', function() {
 });
 
 
+function appendHash(hash) {
+     var windowhash = window.location.hash;
+    if(windowhash.indexOf(hash) == -1) {
+        windowhash=windowhash.concat(hash);
+        history.pushState('', document.title, window.location.pathname+windowhash);
+    }
+}
+
 sorttable.sort_alpha = function(a,b) { return a[0].localeCompare(b[0]); }
 
