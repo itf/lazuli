@@ -3,8 +3,8 @@
 <svg xmlns="http://www.w3.org/2000/svg">
 <metadata>Copyright (C) 2016 by original authors @ fontello.com</metadata>
 <defs>
-<font id="fontello" horiz-adv-x="1000" >
-<font-face font-family="fontello" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="850" descent="-150" />
+<font id="fontawesome-webfont" horiz-adv-x="1000" >
+<font-face font-family="fontawesome-webfont" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="850" descent="-150" />
 <missing-glyph horiz-adv-x="1000" />
 <glyph glyph-name="times" unicode="&#xf00d;" d="M724 112q0-22-15-38l-76-76q-16-15-38-15t-38 15l-164 165-164-165q-16-15-38-15t-38 15l-76 76q-16 16-16 38t16 38l164 164-164 164q-16 16-16 38t16 38l76 76q16 16 38 16t38-16l164-164 164 164q16 16 38 16t38-16l76-76q15-15 15-38t-15-38l-164-164 164-164q15-15 15-38z" horiz-adv-x="785.7" />
 
@@ -15,6 +15,8 @@
 <glyph glyph-name="phone" unicode="&#xf095;" d="M786 158q0-15-6-39t-12-38q-11-28-68-60-52-28-103-28-16 0-30 2t-32 7-26 8-31 11-28 10q-54 20-97 47-72 44-148 120t-120 148q-27 43-46 97-2 5-10 28t-12 31-8 26-7 32-2 29q0 52 29 104 31 57 59 68 14 6 38 12t39 6q8 0 12-2 10-3 30-43 6-10 16-30t20-35 17-30q2-2 10-14t12-20 4-16q0-11-16-28t-35-30-34-30-16-25q0-5 3-13t4-11 8-14 7-10q42-77 97-132t131-97q1 0 10-6t14-8 11-5 13-2q10 0 25 15t30 35 31 35 28 16q7 0 15-4t20-12 14-10q14-8 30-17t35-20 31-17q39-19 42-29 2-4 2-12z" horiz-adv-x="785.7" />
 
 <glyph glyph-name="facebook" unicode="&#xf09a;" d="M535 843v-147h-87q-48 0-65-20t-17-60v-106h164l-22-165h-142v-424h-171v424h-142v165h142v122q0 104 58 161t155 57q82 0 127-7z" horiz-adv-x="571.4" />
+
+<glyph glyph-name="mobile" unicode="&#xf10b;" d="M259 64q0 19-13 32t-32 13-31-13-13-32 13-31 31-13 32 13 13 31z m116 90v392q0 8-5 13t-13 5h-286q-7 0-12-5t-5-13v-392q0-8 5-13t12-5h286q7 0 13 5t5 13z m-107 473q0 9-9 9h-89q-9 0-9-9t9-9h89q9 0 9 9z m161 9v-572q0-29-22-50t-50-21h-286q-29 0-50 21t-21 50v572q0 29 21 50t50 21h286q29 0 50-21t22-50z" horiz-adv-x="428.6" />
 </font>
 </defs>
 </svg>

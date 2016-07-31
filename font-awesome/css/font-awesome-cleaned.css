@@ -61,6 +61,9 @@
 .fa-phone:before {
   content: "\f095";
 }
+.fa-mobile:before {
+	 content: '\f10b';
+ }
 .sr-only {
   position: absolute;
   width: 1px;

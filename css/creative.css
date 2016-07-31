@@ -228,7 +228,7 @@ header a{
 
 
 
-header a[href^="tel:"]:before {
+header .tel:before {
   content: "\260e";
   margin-right: 0.5em;
 }
