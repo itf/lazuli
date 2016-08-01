@@ -573,12 +573,3 @@ body {
 .my-fa-facebook:before {
   content: "\f09a";
 }
-    .blur-up {
-        -webkit-filter: blur(5px);
-        filter: blur(5px);
-    }
-
-    .blur-up.lazyloaded {
-        -webkit-filter: blur(0);
-        filter: blur(0);
-    }
