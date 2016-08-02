@@ -17,13 +17,10 @@
   });
 
 
-var foo = $('.gallery-photo');
-foo.poptrox({
-    selector:  'a.image', 
-    usePopupNav: true,
-    baseZIndex:2000,
-   windowMargin:5,
-});
+
+
+baguetteBox.run('.gallery-photo');
+
 
 var previoushash = "";
 
