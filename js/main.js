@@ -16,11 +16,9 @@
   } 
   });
 
-
-
-
-baguetteBox.run('.gallery-photo');
-
+baguetteBox.run('.gallery-photo',{
+	buttons: true
+});
 
 var previoushash = "";
 
