@@ -46,3 +46,22 @@ table.sortable thead {
         display:none;
     }
 }
+
+.tooltip-button{
+  float:right; 
+  position:relative; 
+  font-size:1.2em; 
+  display:inline;
+}
+
+@media (max-width:315px){
+   .tooltip-button{
+      font-size:0.8em; 
+    }
+}
+
+@media (max-width:301px){
+    th .tooltip-button{
+        display:none;
+    }
+}

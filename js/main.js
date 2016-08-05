@@ -105,7 +105,44 @@ function appendHash(hash) {
     }
 }
 
+(function manualToolTip() {
+        var flag = false;
+        $('.tooltip-ne').click(function (e) {
+          (tlite.show(e.target, { grav: 'ne' }));
+        });
+        $('.tooltip-nw').click(function (e) {
+          (tlite.show(e.target, { grav: 'nw' }));
+        });
+        $('.tooltip-n').click(function (e) {
+          (tlite.show(e.target, { grav: 'n' }));
+        });
+
+      // Helper method for handling classes
+      function classWhen(el) {
+        var classes = (el.className || '').split(' ');
+        return function (cssClass, opts) {
+          return ~classes.indexOf(cssClass) && opts;
+        }
+      }
+
+      tlite(function (el) {
+        var when = classWhen(el);
+        return when('tooltip', { grav: 's' }) ||
+          when('tooltip-n', { grav: 'n' }) ||
+          when('tooltip-s', { grav: 's' }) ||
+          when('tooltip-w', { grav: 'w' }) ||
+          when('tooltip-e', { grav: 'e' }) ||
+          when('tooltip-se', { grav: 'se' }) ||
+          when('tooltip-ne', { grav: 'ne' }) ||
+          when('tooltip-sw', { grav: 'sw' }) ||
+          when('tooltip-nw', { grav: 'nw' })
+      });
+
+}());
+
 sorttable.sort_alpha = function(a,b) { return a[0].localeCompare(b[0]); }
+
+
 
 
 
