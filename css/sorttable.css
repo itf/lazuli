@@ -65,3 +65,9 @@ table.sortable thead {
         display:none;
     }
 }
+
+th span.tooltiped{
+	 border-bottom: 1px dashed #999;
+ 	 position:relative; 
+  	display:inline;
+}

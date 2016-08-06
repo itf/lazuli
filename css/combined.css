@@ -1093,3 +1093,9 @@ table.sortable thead {
         width:280px;
     }
 }
+
+th span.tooltiped{
+	border-bottom: 1px dashed #999;
+ 	position:relative; 
+  	display:inline;
+}
