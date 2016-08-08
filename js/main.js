@@ -5,12 +5,10 @@
   
   ga('create', 'UA-80847986-1', 'auto');
   ga('send', 'pageview');
-  
-  setTimeout("ga('send', 'event', { eventCategory: '60 seconds on page', eventAction: 'Read' })", 60000);
-  
+
   var runned = false; 
   $( window ).scroll( function() { 
-  if ( $( document ).scrollTop() >= 250 && runned == false ) { 
+  if ( $( document ).scrollTop() >= 350 && runned == false ) { 
   ga('send', 'event', { eventCategory: 'Scrolled 350px', eventAction: 'Scroll' }); 
   runned = true; 
   } 
@@ -142,7 +140,8 @@ function appendHash(hash) {
 
 sorttable.sort_alpha = function(a,b) { return a[0].localeCompare(b[0]); }
 
+ga('require', 'linkid');
 
-
-
+setTimeout("ga('send', 'event', { eventCategory: '60 seconds on page', eventAction: 'Read' })", 60000);
+  
 
